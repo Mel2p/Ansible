@@ -1,0 +1,5 @@
+- name: Install Php
+  apt: php7.2
+    
+- name: Install Apache
+  apt: apache2

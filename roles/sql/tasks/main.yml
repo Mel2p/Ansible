@@ -1,0 +1,17 @@
+- name: install Mysql
+  apt: 
+    name: mysql-server
+    update_cache: yes
+  remote_user: pyshell
+
+- name: Create user
+  mysql_user:
+    login_user: root
+    name: mel
+    password: lem
+
+- name: Create database 
+  mysql_db:
+    name: bbd
+    login_user: mel
+    login_password: lem

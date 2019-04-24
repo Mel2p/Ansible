@@ -1,0 +1,4 @@
+wp_db_name: bdd
+wp_db_user: mel
+wp_db_password: lem
+wp_version: 5.1.1
