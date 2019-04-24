@@ -1,4 +1,4 @@
-- name: install Mysql
+- name: Install Mysql
   apt: 
     name: mysql-server
     update_cache: yes

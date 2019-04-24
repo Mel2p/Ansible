@@ -1,0 +1,23 @@
+- name: MySql
+  hosts: bdd
+  remote_user: mel
+  roles: 
+    - role: 'mysql'
+
+- name: Ftp
+  hosts: app
+  remote_user: mel
+  roles: 
+    - role: 'ftp'
+
+- name: Apache / Php
+  hosts: app
+  remote_user: mel
+  roles: 
+    - role: 'apachephp'
+
+- name: Wordpress
+  hosts: app
+  remote_user: mel
+  roles: 
+    - role: 'wordpress'
